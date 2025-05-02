@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  background-attachment: fixed;
+}
+
+body.menu-aberto {
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  flex: 1;
+  display: block;
+}
+
+@media (min-width: 970px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+.topo {
+  background: #ff4d00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 42px 20px;
+  position: relative;
+}
+
+.botoes-usuario {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn-menu-entrar {
+  flex: 1;
+}
+
+.btn-menu-criar {
+  flex: 1;
+  text-align: center;
+}
+
+.btn-entrar {
+  background: white;
+  color: #ff4d00;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-entrar:hover {
+  background: #fff6f3;
+}
+
+.btn-Criar {
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hero {
+  font-family: 'Poppins', 'EB Garamond', 'Playfair Display', sans-serif;  
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.hero h2 {
+  font-family: 'Tagesschrift', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 10px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+
+.btn-ver {
+  background: #ff4d00;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-ver:hover {
+  background: #eb4904;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: right 0.4s ease;
+  justify-content: space-between;
+}
+
+.menu-lateral.ativo {
+  right: 0;
+}
+
+.fechar-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.logo-menu {
+  margin-top: -10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff4d00;
+  margin-bottom: 30px;
+  margin-left: -15px;
+  line-height: 28px;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+.menu-links a {
+  margin-bottom: 15px;
+  margin-left: -15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.btn-menu-entrar {
+  background: #ff4d00;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-left: -14px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.btn-menu-entrar:hover {
+  background: #f84f07;
+}
+
+.btn-menu-criar {
+  color: #ff4d00;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ou center se preferir centralizar */
+  gap: 12px;                   /* espaçamento entre os botões */
+  padding: 0 10px;
+  max-width: 600px;           /* largura máxima opcional */
+  margin: 0 auto;             /* centraliza o grupo se usar max-width */
+}
+
+.categorias button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #f0eeee;
+  border-radius: 999px; /* para deixar o botão bem arredondado */
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categorias button:hover {
+  background: #f5f3f3;               /* leve destaque ao passar o mouse */
+  border-color: #f9f6f6;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+  opacity: 0.7;
+}
+
+footer a:hover {
+  color: blue;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 1rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 16px; /* Reduz o espaçamento */
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .btn-Criar {
+    display: none;
+  }
+
+  .botoes-usuario {
+    gap: 6px;
+  }
+
+  .btn-Criar,
+  .btn-entrar {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .search-box {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .btn-ver {
+    width: 90%;
+    font-size: 15px;
+    padding: 14px;
+    margin-bottom: 30px;
+  }
+
+  .categorias {
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .categorias button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .search-area {
+    flex-direction: column;
+  }
+
+  .menu-lateral {
+    right: -100%;
+    left: auto;
+    transition: right 0.4s ease;
+  }
+
+  .menu-lateral.ativo {
+    right: 0;
+  }
+}
+
+/* Correção aqui: mim-width → min-width */
+@media (min-width: 768px) {
+  .search-area {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn-ver {
+    margin-bottom: 0;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .topo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/* Até 750px - menu cobre a tela */
+@media (max-width: 750px) {
+  .menu-lateral {
+    width: 100%;
+    right: -100%;
+  }
+
+  .menu-lateral.ativo {
+    right: 0;
+  }
+}
+
+/* Entre 751px e 970px - menu aparece parcialmente */
+@media (min-width: 751px) and (max-width: 970px) {
+  .menu-lateral {
+    width: 80vw;            /* usa 80% da largura da janela */
+    max-width: 650px;       /* mas nunca passa de 400px */
+    right: -80vw;           /* move para fora da tela proporcionalmente */
+    transition: right 0.4s ease;
+  }
+
+  .menu-lateral.ativo {
+    right: 0;
+  }
+}
+
+/* Acima de 970px - menu desaparece completamente */
+@media (min-width: 971px) {
+  .menu-lateral {
+    display: none !important;
+  }
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
+  pointer-events: none; /* Desativa clique */
+}
+
+.menu-lateral.ativo + .overlay-menu {
+  display: block;
+}
+
+#overlayMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}

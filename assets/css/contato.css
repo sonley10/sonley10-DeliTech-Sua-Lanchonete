@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+  main section {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+  h2 {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+ 
+
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    margin-top: 20px;
+    background: #ff4d4d;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+
+  form button:hover {
+    color: #ffffff;
+    background-color: #920606;
+    opacity: 1;
+  }
+
+  .msg {
+    background: #d4edda;
+color: #08f13e;
+padding: 10px;
+border-radius: 6px;
+text-align: center;
+margin-bottom: 15px;
+}
+/* Estilo do botão do WhatsApp */
+.whatsapp-button {
+  display: inline-block;
+  background: white; /* Fundo branco */
+  color: black; /* Texto preto */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 6px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+  margin-left: 100px; /* Espaçamento entre os botões */
+  margin-top: 20px; /* Espaçamento superior */
+  opacity: 0.8; /* Transparência inicial */
+  transition: all 1s ease; /* Transição suave para todas as propriedades */
+  position: relative; /* Posicionamento relativo */
+  border: 2px solid transparent; /* Borda inicial transparente */
+}
+
+.whatsapp-button:hover {
+  text-decoration: underline;
+  color: white; /* Altera a cor do texto para branco */
+  background-color: rgba(37, 211, 102, 1); /* Fundo verde sólido */
+  opacity: 1; /* Remove a transparência */
+  border: 2px solid rgba(37, 211, 102, 1); /* Adiciona borda verde */
+}

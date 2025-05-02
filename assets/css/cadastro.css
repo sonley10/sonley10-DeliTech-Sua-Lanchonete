@@ -1,0 +1,73 @@
+/* Container principal */
+main {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: flex-start; /* Alinha ao topo da tela */
+  height: 100vh; /* Preenche toda a altura da tela */
+  background-color: #f1f1f1; /* Cor de fundo suave */
+  padding: 20px;
+}
+
+/* Seção do formulário */
+section {
+  background-color: white;
+  padding: 10px 20px; /* Menos padding para reduzir o espaço */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Cabeçalho do formulário (Cadastro) */
+h1 {
+  color: #ffffff; /* Mantém a cor do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 15px; /* Diminui a distância abaixo do título */
+  font-size: 24px;
+}
+
+/* Estilo dos rótulos */
+label {
+  font-weight: bold;
+  color: #5d4037; /* Cor dos rótulos */
+  margin-bottom: 0px; /* Diminui a distância entre o rótulo e o campo */
+  display: block; /* Garante que o label fique acima do input */
+  text-align: left; /* Garante que o rótulo fique à esquerda */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px; /* Menos padding para reduzir o espaço */
+  margin-top: -10px; /* Diminui o espaço entre o rótulo e o campo */
+  margin-bottom: -20px; /* Diminui a distância entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+/* Efeito de foco nos campos de entrada */
+input:focus {
+  border-color: #ff7043;
+  outline: none;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #ff7043; /* Cor do botão */
+  color: white;
+  padding: 10px; /* Menos padding para reduzir o espaço */
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+  background-color: #e64a19; /* Cor do botão ao passar o mouse */
+}
