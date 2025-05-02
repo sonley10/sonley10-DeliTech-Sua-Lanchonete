@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pedido'])) {
     <h1>DeliTech</h1>
     <p class="bemvindo">Bem-vindo à melhor experiência de lanches online 🍔🚀</p>
     <nav>
-    <a href="index.php">Início</a> 
+    <a href="index.html">Início</a> 
         <a href="cardapio.php">Cardapio</a>
         <a href="contato.php">Fale-Conosco</a>
         <a href="sobre.php">Sobre</a>
